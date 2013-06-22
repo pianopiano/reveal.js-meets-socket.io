@@ -1,0 +1,17 @@
+node_modules/*
+.DS_Store
+
+public/test/*
+public/plugin/*
+public/Gruntfile.js
+public/package.json
+public/README.md
+public/.*
+public/css/.*
+public/css/print
+public/css/theme
+public/css/reveal.css
+public/images
+public/js/.*
+public/js/reveal.js
+public/lib/*

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>Reveal.js meets Socket.io Sample</title>
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Reveal.js meets Socket.io Sample</h1>
+				</section>
+				<section>
+					<h2>Reveal.jsをスマホから操作するサンプル</h2>
+					<p class="fragment" data-fragment-index="0">... いるもの ...</p>
+					<ol>
+						<li class="fragment" data-fragment-index="1"><a class="test" href="http://lab.hakim.se/reveal-js/">reveal.js</a></li>
+						<li class="fragment" data-fragment-index="2"><a class="test" href="http://nodejs.org">node.js</a></li>
+						<li class="fragment" data-fragment-index="3"><a class="test" href="http://socket.io">socket.io</a></li>
+						<li class="fragment" data-fragment-index="4"><a class="test" href="https://npmjs.org/package/qrcode-npm">qrcode-npm</a><br />
+						最初のQRコード
+						</li>
+					</ol>
+				</section>
+				<section>
+					<h2>使い方</h2>
+				</section>
+				<section>
+					<h2 id="qr-code">最初に出てくるQUコードをスマホて読むか...<br />
+						URLを直接入力。
+					</h2>
+				</section>
+				<section>
+					<h2>スマホ無かったらもう一つブラウザ立ち上げて</h2>
+					<p>/controller.html</p>
+				</section>
+				<section>
+					<h2>接続完了！</h2>
+				</section>
+				<section>
+					<h2>接続出来たらスマホの画面を力一杯flick！</h2>
+					<p>まず右から左にflickしてみて</p>
+				</section>
+				<section data-background="#007777">
+					<h2>もう一回</h2>
+				</section>
+				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+					<h2>もう一回</h2>
+				</section>
+				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
+					<section data-background="#8c4738">
+						<h2>次は下から上に</h2>
+					</section>
+					<section data-background="#007777">
+						<h2>もう一回</h2>
+					</section>
+					<section data-background="#8c4738">
+						<h2>もう一回</h2>
+					</section>
+					<section data-background="#007777">
+						<h2>もういいよ、左へ　→</h2>
+					</section>
+				</section>
+				<section>
+					<h2>同じ方向に進む場合はタップするだけでもいいよ。</h2>
+				</section>
+				<section>
+					<h2>終わり</h2>
+				</section>
+			</div>
+
+		</div>
+		<div id="qrcode"></div>
+		<script type="text/javascript" src="lib/js/head.min.js"></script>
+		<script type="text/javascript" src="js/reveal.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="js/index.js">
+		</script>
+	</body>
+</html>
