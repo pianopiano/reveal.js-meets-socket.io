@@ -11,7 +11,7 @@ $ =>
 	$container
 	.width($win.width())
 	.height($win.height())
-	.on 'touchstart mousedown', (e) =>
+	.on 'touchstart mousedown', (e) ->
 		e.preventDefault()
 		if e.type is 'mousedown'
 			pos.startX = e.pageX
@@ -19,10 +19,10 @@ $ =>
 		else if e.type is 'touchstart'
 			pos.startX = event.changedTouches[0].pageX
 			pos.startY = event.changedTouches[0].pageY
-	.on 'touchmove', (e) =>
+	.on 'touchmove', (e) ->
 		pos.endX = event.changedTouches[0].pageX
 		pos.endY = event.changedTouches[0].pageY
-	.on 'touchend mouseup', (e) =>
+	.on 'touchend mouseup', (e) ->
 		if e.type == 'mouseup'
 			pos.endX = e.pageX
 			pos.endY = e.pageY

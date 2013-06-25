@@ -15,8 +15,7 @@
       });
     };
     initSocket = function() {
-      var socket,
-        _this = this;
+      var socket;
       socket = io.connect('http://localhost:3000/');
       socket.on('qrcode', function(data) {
         var $qr, $win;

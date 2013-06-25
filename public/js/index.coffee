@@ -10,7 +10,7 @@ $ =>
 	
 	initSocket = ->
 		socket = io.connect('http://localhost:3000/')
-		socket.on 'qrcode', (data) =>
+		socket.on 'qrcode', (data) ->
 			$win = $(window)
 			$qr = $('#qrcode')
 			$('#qrcode').append '<p>QR コードをスマートフォンで読み込んでください。</p><br />'+data.img+'<br />'+
